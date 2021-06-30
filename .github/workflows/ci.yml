@@ -36,3 +36,8 @@ jobs:
         python -m pip install .[dev]
     - name: Run pytest
       run: pytest
+    - name: Run examples
+      run: |
+        cd doc
+        python example_NIRISS.py
+        python example_analysis.py
